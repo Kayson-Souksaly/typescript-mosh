@@ -1,3 +1,9 @@
-let age: number = 20;
+enum Size {
+  Small = 2,
+  Medium,
+  Large,
+}
 
-if (age < 50) age += 10;
+let mySize: Size = Size.Medium;
+
+console.log(mySize);
