@@ -1,9 +1,5 @@
-enum Size {
-  Small = 2,
-  Medium,
-  Large,
-}
-
-let mySize: Size = Size.Medium;
-
-console.log(mySize);
+let employee: {
+  readonly id: number;
+  name: string;
+  retire: (date: Date) => void;
+} = { id: 1, name: "Kayson", retire: (date: Date) => console.log(date) };
