@@ -1,5 +1,11 @@
-let employee: {
+type Employee = {
   readonly id: number;
   name: string;
   retire: (date: Date) => void;
-} = { id: 1, name: "Kayson", retire: (date: Date) => console.log(date) };
+};
+
+let employee: Employee = {
+  id: 1,
+  name: "Kayson",
+  retire: (date: Date) => console.log(date),
+};
